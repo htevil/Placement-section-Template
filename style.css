@@ -69,9 +69,8 @@ main {
   z-index: 3;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
 }
 
 .lift_part {
@@ -154,7 +153,6 @@ button:hover{
 .card {
   width: 100%;
   max-width: 220px;
-  min-width: 180px;
   height: fit-content;
   max-height: 320px;
   display: flex;
@@ -217,14 +215,14 @@ button:hover{
   width: 60%;
 }
 
-.logos {
+.bottom {
   width: 100%;
   overflow: hidden;
   padding: 5px 0;
   background: transparent;
   white-space: nowrap;
   position: absolute;
-  top: 580px;
+  top: 80%;
 }
 
 .logos:before,
@@ -276,13 +274,16 @@ button:hover{
     padding: 12.5px;
   }
 
+  .top{
+    justify-content: center;
+  }
+
   .lift_part{
     width: 50%;
   }
 
   .right_part{
-    width: 50%;
-    height: 670px;
+    width: 40%;
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -293,6 +294,20 @@ button:hover{
 
   .right_part> :nth-child(even) {
     align-self: flex-start;
+  }
+
+  .card{
+    max-width: 180px;
+    height: fit-content;
+    font-size: 14px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 10px;
   }
 
 }
